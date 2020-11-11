@@ -1,0 +1,50 @@
+name: personal-site-workflow
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main, feature/**, chore/**, bugs/** ]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    # needs: [js-tests, static-analysis]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.11.0
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Create Production Build
+        run: yarn build
+      - name: Archive Production Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: build
+
+  auto-deploy:
+      runs-on: ubuntu-latest
+      needs: [ build ]
+      if: github.ref == 'refs/heads/main'
+      steps:
+        - uses: actions/checkout@v2
+        - name: Download Artifact
+          uses: actions/download-artifact@v2
+          with:
+            name: build
+            path: build
+        - name: Setup Node.js
+          uses: actions/setup-node@v1
+          with:
+            node-version: 14.11.0
+        - name: Install Dependencies
+          run: yarn install --frozen-lockfile
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./build
