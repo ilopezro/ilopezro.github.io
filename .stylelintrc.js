@@ -41,7 +41,7 @@ module.exports = {
         },
       ],
     ],
-    "string-quotes": "double",
+    "string-quotes": "single",
     "value-list-comma-newline-after": null,
   },
 };
