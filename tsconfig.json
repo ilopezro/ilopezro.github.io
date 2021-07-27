@@ -22,7 +22,6 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "sourceMap": true,
-    "watch": true
   },
   "exclude": [
     "node_modules"
