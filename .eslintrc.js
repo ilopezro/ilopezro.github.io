@@ -40,4 +40,9 @@ module.exports = {
     "plugin:jest/recommended",
     "plugin:prettier/recommended",
   ],
+  settings: {
+    "import/resolver": {
+      typescript: {},
+    },
+  },
 };
