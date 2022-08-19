@@ -6,7 +6,8 @@
     "lib": [
       "ESNext",
       "ESNext.AsyncIterable",
-      "DOM"
+      "DOM",
+      "ES6"
     ],
     "allowJs": false,
     "skipLibCheck": true,
@@ -22,6 +23,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true
   },
   "exclude": [
     "node_modules"
