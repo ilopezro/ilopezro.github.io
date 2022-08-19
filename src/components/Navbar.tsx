@@ -1,6 +1,6 @@
-import React from "react";
+import { FunctionComponent } from "react";
 
-const Navbar: React.FC = () => {
+const Navbar: FunctionComponent = () => {
   return <div>Hello from Navbar</div>;
 };
 

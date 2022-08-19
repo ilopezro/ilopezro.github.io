@@ -1,6 +1,6 @@
-import React from "react";
+import { FunctionComponent } from "react";
 
-const HomeView: React.FC = () => {
+const HomeView: FunctionComponent = () => {
   return <div> Hello World from my homepage :)</div>;
 };
 
