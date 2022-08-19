@@ -30,6 +30,7 @@ module.exports = {
   },
   extends: [
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
     "react-app",
