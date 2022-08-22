@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "components/*": ["components/*"], 
+      "components/*": ["components/*"],
       "views/*": ["views/*"],
-       "routes/*": ["routes/*"]
+      "routes/*": ["routes/*"]
     }
   }
 }
