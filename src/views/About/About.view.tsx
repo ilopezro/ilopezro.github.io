@@ -1,7 +1,7 @@
-import React from "react";
+import { FunctionComponent } from "react";
 
-const AboutView: React.FC = () => {
-  return <div> Get to know more about me! Page is under construction :)</div>;
-};
+const AboutView: FunctionComponent = () => (
+  <div> Get to know more about me! Page is under construction :)</div>
+);
 
 export default AboutView;

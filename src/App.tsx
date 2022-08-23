@@ -1,12 +1,13 @@
-import React from "react";
+import { ThemeProvider } from "@mui/material";
+import { FunctionComponent } from "react";
 import Routes from "routes/routes";
-import "./App.scss";
+import { myTheme } from "styles";
 
-const App: React.FC = () => {
+const App: FunctionComponent = () => {
   return (
-    <div className='App'>
+    <ThemeProvider theme={myTheme}>
       <Routes />
-    </div>
+    </ThemeProvider>
   );
 };
 

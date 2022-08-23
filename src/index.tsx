@@ -1,11 +1,16 @@
-import React from "react";
-import { render } from "react-dom";
-import "./index.scss";
+import { StrictMode } from "react";
 import App from "./App";
 
-render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+import { createRoot } from "react-dom/client";
+import { Layout } from "./components";
+const container = document.getElementById("root");
+
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(
+  <StrictMode>
+    <Layout>
+      <App />
+    </Layout>
+  </StrictMode>
 );

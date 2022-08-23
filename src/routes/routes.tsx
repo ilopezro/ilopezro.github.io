@@ -1,18 +1,18 @@
-import React from "react";
+import { Fragment, FunctionComponent } from "react";
 import { HashRouter, Routes as ReactRoutes, Route } from "react-router-dom";
 import HomeView from "views/Home/Home.view";
 import AboutView from "views/About/About.view";
 
-const Routes: React.FC = () => {
+const Routes: FunctionComponent = () => {
   return (
-    <div className='Routes'>
+    <Fragment>
       <HashRouter>
         <ReactRoutes>
           <Route path='/' element={<HomeView />} />
           <Route path='/about' element={<AboutView />} />
         </ReactRoutes>
       </HashRouter>
-    </div>
+    </Fragment>
   );
 };
 
