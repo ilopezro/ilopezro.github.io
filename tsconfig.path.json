@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "components/*": ["components/*"],
-      "views/*": ["views/*"],
-      "routes/*": ["routes/*"]
+      "@isai-portfolio/components": ["components"],
+      "@isai-portfolio/views/*": ["views/*"],
+      "@isai-portfolio/routes/*": ["routes/*"]
     }
   }
 }
