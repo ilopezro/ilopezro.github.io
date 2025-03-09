@@ -1,6 +1,6 @@
 import React from "react";
+// eslint-disable-next-line react/no-deprecated
 import { render } from "react-dom";
-import "./index.scss";
 import App from "./App";
 
 render(

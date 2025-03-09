@@ -9,7 +9,7 @@ showcases my software engineering portfolio.
 - React 17
 - Node 22.14.0
 - [asdf](https://github.com/asdf-vm/asdf) for version management
-- `eslint`, `stylelint`, and `prettier` to enforce code quality
+- `eslint` and `prettier` to enforce code quality
 
 ## Local Setup
 
