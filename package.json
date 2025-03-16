@@ -14,7 +14,7 @@
   },
   "scripts": {
     "deploy": "gh-pages -b gh-pages -d build",
-    "lint": "eslint 'src/**/*.{js, jsx, ts,tsx}'",
+    "lint": "eslint 'app/**/*.{ts,tsx}'",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "npx serve@latest ./build",
@@ -44,18 +44,18 @@
     "@types/react-router-dom": "5.3.3",
     "@typescript-eslint/eslint-plugin": "5.33.0",
     "@typescript-eslint/parser": "5.33.0",
-    "eslint": "8.3.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "10.1.1",
     "eslint-config-react-app": "7.0.1",
     "eslint-import-resolver-typescript": "3.4.1",
     "eslint-plugin-jest": "26.8.2",
-    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-prettier": "5.2.3",
     "eslint-plugin-react-hooks": "4.6.0",
     "gh-pages": "^6.3.0",
     "husky": "8.0.1",
     "jest": "27.4.3",
     "lint-staged": "13.0.3",
-    "prettier": "2.7.1",
+    "prettier": "3.5.3",
     "tsconfig-paths": "4.1.0"
   }
 }
