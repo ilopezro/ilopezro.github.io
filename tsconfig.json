@@ -2,7 +2,7 @@
   "compilerOptions": {
     "experimentalDecorators": true,
     "baseUrl": ".",
-    "target": "ES2018",
+    "target": "ES6",
     "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
     "allowJs": false,
     "skipLibCheck": true,
@@ -11,8 +11,8 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -23,9 +23,11 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@app/components/*": ["app/components/*"]
+    }
   },
   "exclude": ["node_modules"],
-  "include": ["build/types/**/*.ts", "src/*", ".next/types/**/*.ts"],
-  "extends": "./tsconfig.path.json"
+  "include": ["build/types/**/*.ts", "src/*", ".next/types/**/*.ts"]
 }
