@@ -1,8 +1,8 @@
-import React from "react";
-import { ClientOnly } from "./client";
+import React from 'react';
+import { ClientOnly } from './client';
 
 export function generateStaticParams() {
-  return [{ slug: [""] }];
+  return [{ slug: [''] }];
 }
 
 export default function Page() {

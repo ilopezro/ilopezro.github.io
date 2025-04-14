@@ -1,9 +1,9 @@
-import { Metadata } from "next";
-import React, { PropsWithChildren } from "react";
-import { Navbar } from "@app/components/Navbar";
+import { Metadata } from 'next';
+import React, { PropsWithChildren } from 'react';
+import { Navbar } from '@app/components/Navbar';
 
 export const metadata: Metadata = {
-  title: "Isai Lopez Rodas",
+  title: 'Isai Lopez Rodas',
   description:
     "Isai Lopez's Personal Website showcasing software engineering portfolio",
 };
