@@ -5,9 +5,8 @@
   "homepage": "https://ilopezro.github.io",
   "dependencies": {
     "next": "^15.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-router-dom": "6.3.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "scripts": {
     "deploy": "gh-pages -b gh-pages -d build",
@@ -32,13 +31,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^14.4.3",
     "@types/node": "22.14.0",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@types/react-router-dom": "^5.3.3",
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "eslint": "^9.22.0",
