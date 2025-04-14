@@ -3,7 +3,11 @@
     "experimentalDecorators": true,
     "baseUrl": ".",
     "target": "ES6",
-    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -11,7 +15,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "ES2022",
+    "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -25,9 +29,16 @@
       }
     ],
     "paths": {
-      "@app/components/*": ["app/components/*"]
+      "@app/components/*": [
+        "app/components/*"
+      ]
     }
   },
-  "exclude": ["node_modules"],
-  "include": ["build/types/**/*.ts", "src/*", ".next/types/**/*.ts"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "app/*",
+    "build/types/**/*.ts"
+  ]
 }
