@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[974],{1113:(e,n,r)=>{"use strict";r.d(n,{ClientOnly:()=>s});var l=r(5155);function s(){return(0,l.jsx)("div",{children:"Hello World from home"})}r(2115)},2453:(e,n,r)=>{Promise.resolve().then(r.bind(r,1113))}},e=>{var n=n=>e(e.s=n);e.O(0,[441,684,358],()=>n(2453)),_N_E=e.O()}]);

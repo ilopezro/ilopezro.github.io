@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[220],{5762:(e,r,s)=>{Promise.resolve().then(s.bind(s,7323))},7323:(e,r,s)=>{"use strict";s.r(r),s.d(r,{default:()=>n});var l=s(5155);function n(){return(0,l.jsx)("div",{children:"Hello World from about"})}}},e=>{var r=r=>e(e.s=r);e.O(0,[441,684,358],()=>r(5762)),_N_E=e.O()}]);
