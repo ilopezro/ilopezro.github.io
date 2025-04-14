@@ -13,9 +13,9 @@ export default [
   ...tseslint.configs.recommended,
   {
     files: ['**/*.{ts,tsx}'],
-    ...pluginReact.configs.flat.recommended,
+    ...pluginReact.configs.flat.all,
     languageOptions: {
-      ...pluginReact.configs.flat.recommended.languageOptions,
+      ...pluginReact.configs.flat.all.languageOptions,
       globals: {
         ...globals.browser,
       },
@@ -24,6 +24,14 @@ export default [
       react: {
         version: 'detect',
       },
+    },
+    rules: {
+      'react/jsx-filename-extension': [
+        'error',
+        {
+          extensions: ['.tsx'],
+        },
+      ],
     },
   },
   {
