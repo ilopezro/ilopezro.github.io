@@ -1,29 +1,8 @@
 # Problem
 
-What is the problem this work solves, including
-
-[Link to Asana Ticket](https://app.asana.com/1234)
-
 # Solution
 
 What I/we did to solve this problem
-
-with @pairperson1
-
-# Change summary:
-
-- Tidy, well formulated commit message
-- Another great commit message
-- Something else I/we did
-
-# Dev-Ops
-
-If you added an ENV variable, please check off that you've updated the following
-
-- [ ] `.env` & `.env.sample`
-- [ ] `webpack.config.js`
-- [ ] Github Secrets
-- [ ] GithubActions Workflow
 
 # Steps to Verify:
 

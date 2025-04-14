@@ -3,6 +3,8 @@ import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
+import reactHooks from 'eslint-plugin-react-hooks';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -10,11 +12,12 @@ export default [
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
+  reactHooks.configs['recommended-latest'],
   {
     files: ['**/*.{ts,tsx}'],
-    ...pluginReact.configs.flat.recommended,
+    ...pluginReact.configs.flat.all,
     languageOptions: {
-      ...pluginReact.configs.flat.recommended.languageOptions,
+      ...pluginReact.configs.flat.all.languageOptions,
       globals: {
         ...globals.browser,
       },
@@ -23,6 +26,24 @@ export default [
       react: {
         version: 'detect',
       },
+    },
+    rules: {
+      'react/jsx-filename-extension': [
+        'error',
+        {
+          extensions: ['.tsx'],
+        },
+      ],
+    },
+  },
+  {
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+          project: '<root>/tsconfig.json',
+        }),
+      ],
     },
   },
   eslintPluginPrettierRecommended,

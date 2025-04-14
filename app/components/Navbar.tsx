@@ -1,5 +1,3 @@
-import React from 'react';
-
-export const Navbar = () => {
+export function Navbar() {
   return <div>Hello from Navbar</div>;
-};
+}

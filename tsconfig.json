@@ -39,6 +39,7 @@
   ],
   "include": [
     "app/*",
-    "build/types/**/*.ts"
+    "build/types/**/*.ts",
+    ".next/types/**/*.ts"
   ]
 }

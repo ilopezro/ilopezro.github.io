@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import { Navbar } from '@app/components/Navbar';
 
 export const metadata: Metadata = {
