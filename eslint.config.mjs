@@ -3,6 +3,7 @@ import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginReact from 'eslint-plugin-react';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -23,6 +24,16 @@ export default [
       react: {
         version: 'detect',
       },
+    },
+  },
+  {
+    settings: {
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+          project: '<root>/tsconfig.json',
+        }),
+      ],
     },
   },
   eslintPluginPrettierRecommended,
