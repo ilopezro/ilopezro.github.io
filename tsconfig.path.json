@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "paths": {
-      "components/*": ["components/*"], 
-      "views/*": ["views/*"],
-       "routes/*": ["routes/*"]
-    }
-  }
-}

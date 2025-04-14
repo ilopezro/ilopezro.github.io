@@ -3,8 +3,8 @@
 
 echo "Running Linter"
 echo "================="
-yarn lint-staged
+npx lint-staged
 
 echo "\nChecking Typescript"
 echo "================="
-yarn tsc --noEmit
+npx tsc --noEmit
