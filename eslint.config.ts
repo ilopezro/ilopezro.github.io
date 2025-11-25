@@ -1,18 +1,17 @@
-import globals from 'globals';
+import eslint from '@eslint/js';
 import pluginJs from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
-import pluginReact from 'eslint-plugin-react';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
-import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
+import pluginReact from 'eslint-plugin-react';
+import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
-  { languageOptions: { globals: globals.browser } },
+export default defineConfig(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-  reactHooks.configs['recommended-latest'],
+  reactHooks.configs.flat['recommended-latest'],
   {
     files: ['**/*.{ts,tsx}'],
     ...pluginReact.configs.flat.all,
@@ -36,15 +35,5 @@ export default [
       ],
     },
   },
-  {
-    settings: {
-      'import-x/resolver-next': [
-        createTypeScriptImportResolver({
-          alwaysTryTypes: true,
-          project: '<root>/tsconfig.json',
-        }),
-      ],
-    },
-  },
   eslintPluginPrettierRecommended,
-];
+);
