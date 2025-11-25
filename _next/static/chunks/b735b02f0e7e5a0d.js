@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,17062,o=>{"use strict";var e=o.i(43476);function t(){return(0,e.jsx)("div",{children:"Hello World from home"})}o.s(["ClientOnly",()=>t])}]);
