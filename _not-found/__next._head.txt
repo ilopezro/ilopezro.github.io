@@ -1,7 +1,5 @@
 1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/967660ccc8d15e59.js"],"ViewportBoundary"]
-4:I[97367,["/_next/static/chunks/967660ccc8d15e59.js"],"MetadataBoundary"]
-5:"$Sreact.suspense"
-0:{"buildId":"4ITAmEiBortEVQ_MNwKa-","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],null]}],"loading":null,"isPartial":false}
-3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-6:[["$","title","0",{"children":"Isai Lopez Rodas"}],["$","meta","1",{"name":"description","content":"Isai Lopez's Personal Website showcasing software engineering portfolio"}]]
+2:I[97367,["/_next/static/chunks/515e883672acc3f3.js"],"ViewportBoundary"]
+3:I[97367,["/_next/static/chunks/515e883672acc3f3.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"buildId":"OJxJFkxKSguCRpMqF7Mv_","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Isai Lopez Rodas"}],["$","meta","1",{"name":"description","content":"Isai Lopez's Personal Website showcasing software engineering portfolio"}]]}]}]}],null]}],"loading":null,"isPartial":false}
