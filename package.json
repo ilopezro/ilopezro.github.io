@@ -15,7 +15,8 @@
     "build": "next build",
     "start": "npx serve@latest ./build",
     "prepare": "husky",
-    "check:ts": "tsc --noEmit"
+    "check:ts": "tsc --noEmit",
+    "knip": "knip"
   },
   "browserslist": {
     "production": [
@@ -32,11 +33,9 @@
   "devDependencies": {
     "@eslint-react/eslint-plugin": "^5.19.0",
     "@eslint/js": "^9.39.1",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.13.4",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.70.0",
-    "@typescript-eslint/parser": "^8.70.0",
     "eslint": "^10.10.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-import-resolver-typescript": "^4.4.5",
@@ -46,6 +45,7 @@
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "jiti": "^2.6.1",
+    "knip": "^6.35.1",
     "lint-staged": "^16.2.7",
     "prettier": "3.6.2",
     "typescript": "^5.9.3",
